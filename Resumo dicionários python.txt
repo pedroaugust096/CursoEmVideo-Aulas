@@ -1,0 +1,73 @@
+O que é um dicionário em Python?
+Um dicionário é uma estrutura de dados em Python que permite armazenar um conjunto de pares chave-valor. Cada chave em um dicionário é única e associada a um valor. Isso torna os dicionários muito úteis para armazenar informações que podem ser acessadas rapidamente por uma chave.
+
+Sintaxe de um dicionário:
+A sintaxe básica de um dicionário em Python é a seguinte:
+
+meu_dicionario = {'chave1': 'valor1', 'chave2': 'valor2', 'chave3': 'valor3'}
+
+Principais características dos dicionários:
+Chaves Únicas: As chaves em um dicionário são únicas, o que significa que não pode haver chaves duplicadas. Se você tentar adicionar uma chave que já existe, o valor associado a essa chave será atualizado.
+
+Mutabilidade: Os dicionários são mutáveis, o que significa que você pode adicionar, modificar ou remover pares chave-valor.
+
+Desordem (Python 3.7+): A partir do Python 3.7 em diante, os dicionários mantêm a ordem de inserção dos elementos. Isso significa que os itens são armazenados na ordem em que foram adicionados.
+
+Operações com dicionários:
+Aqui estão algumas operações comuns que você pode realizar em dicionários:
+
+Acessar valores:
+Você pode acessar um valor associado a uma chave específica usando a chave como índice:
+
+meu_dicionario['chave1']  # Isso retornará 'valor1'
+
+Adicionar ou modificar valores:
+Para adicionar um novo par chave-valor ou modificar um valor existente, basta atribuir um valor a uma chave:
+
+meu_dicionario['nova_chave'] = 'novo_valor'
+
+Remover um par chave-valor:
+Você pode remover um par chave-valor usando a palavra-chave del:
+
+del meu_dicionario['chave1']
+
+Verificar se uma chave existe:
+Você pode verificar se uma chave existe em um dicionário usando o operador in:
+
+if 'chave1' in meu_dicionario:
+    print('A chave existe')
+
+Iterar sobre um dicionário:
+Você pode iterar sobre as chaves ou os valores de um dicionário usando loops for:
+
+for chave in meu_dicionario:
+    print(chave, meu_dicionario[chave])
+
+for valor in meu_dicionario.values():
+    print(valor)
+
+Tamanho do dicionário:
+Você pode obter o número de pares chave-valor em um dicionário usando a função len():
+
+tamanho = len(meu_dicionario)
+
+Exemplo de uso de dicionário:
+
+aluno = {
+    'nome': 'João',
+    'idade': 25,
+    'curso': 'Ciência da Computação'
+}
+
+# Acessar valores
+print(aluno['nome'])  # Saída: 'João'
+
+# Modificar valores
+aluno['idade'] = 26
+
+# Adicionar novo par chave-valor
+aluno['cidade'] = 'São Paulo'
+
+# Iterar sobre o dicionário
+for chave, valor in aluno.items():
+    print(f'{chave}: {valor}')

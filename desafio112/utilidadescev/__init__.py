@@ -1,0 +1,1 @@
+from desafio112.utilidadescev import dado, moeda
